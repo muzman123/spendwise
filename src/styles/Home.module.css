@@ -1,0 +1,9 @@
+.overlay {
+    margin: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    filter: blur(3px);
+}
+        

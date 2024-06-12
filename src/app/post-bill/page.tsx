@@ -1,24 +1,11 @@
 import Layout from '../layout'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const PostBillPage = () => {
   return (
     <Layout>
-      <header className="bg-purple-200 p-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <img src="/favicon.ico" alt="RateXpose logo" className="w-6 h-6" />
-          <span className="ml-2">RateXpose</span>
-        </div>
-        <div className="flex-grow mx-4">
-          <input type="text" className="p-2 border border-black rounded w-full" placeholder="Search the community..." />
-        </div>
-        <nav className="flex space-x-4">
-          <a href="/landing" className="text-black">Home</a>
-          <a href="/about" className="text-black">About</a>
-          <a href="/blog" className="text-black">Blog</a>
-          <a href="/post-bill" className="text-black">Post Bill</a>
-          <a href="/login" className="text-black">Login/Signup</a>
-        </nav>
-      </header>
+      <Header />
 
       <main className="flex flex-col items-center mt-20">
         <h1 className="text-4xl">Post a Bill</h1>
@@ -30,11 +17,7 @@ const PostBillPage = () => {
         </form>
       </main>
 
-      <footer className="bg-purple-200 p-4 text-center mt-20">
-        <div>
-          <a href="/landing" className="text-black">RateXpose</a> | <a href="/contact-us" className="text-black">Contact Us</a>
-        </div>
-      </footer>
+      <Footer />
     </Layout>
   )
 }
