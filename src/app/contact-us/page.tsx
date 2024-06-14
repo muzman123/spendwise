@@ -12,7 +12,7 @@ const ContactPage = () => {
       </Head>
       <Header />
 
-      <main className="mt-10 px-10">
+      <main className="mt-10 px-10 min-h-screen">
         <section>
           <h1 className="text-4xl text-center mb-10">Contact Us</h1>
           <div className="bg-purple-100 p-6 rounded-lg text-lg mb-20">

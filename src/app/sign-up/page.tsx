@@ -21,9 +21,9 @@ export default function SignUpPage() {
           <h1 className="text-2xl">Sign Up</h1>
         </div>
         <form className="flex flex-col items-center">
-          <input type="email" placeholder="Email Address" className="p-2 rounded mb-4 w-full max-w-xs bg-purple-100" />
-          <input type="password" placeholder="Password" className="p-2 rounded mb-4 w-full max-w-xs bg-purple-100" />
-          <input type="password" placeholder="Confirm Password" className="p-2 rounded mb-4 w-full max-w-xs bg-purple-100" />
+          <input type="email" placeholder="Email Address" className="p-2 rounded mb-4 w-full max-w-xs bg-primary" />
+          <input type="password" placeholder="Password" className="p-2 rounded mb-4 w-full max-w-xs bg-primary" />
+          <input type="password" placeholder="Confirm Password" className="p-2 rounded mb-4 w-full max-w-xs bg-primary" />
           <button type="submit" className="p-3 rounded w-full max-w-xs bg-green-200 mb-4">Sign Up</button>
         </form>
         <p className="text-center">Already have an account? <a href="/login" className="text-blue-500">Sign In Here</a></p>

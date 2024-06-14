@@ -21,8 +21,8 @@ export default function LoginPage() {
           <h1 className="text-2xl">Sign In</h1>
         </div>
         <form className="flex flex-col items-center">
-          <input type="email" placeholder="Email Address" className="p-2 rounded mb-4 w-full max-w-xs bg-purple-100" />
-          <input type="password" placeholder="Password" className="p-2 rounded mb-4 w-full max-w-xs bg-purple-100" />
+          <input type="email" placeholder="Email Address" className="p-2 rounded mb-4 w-full max-w-xs bg-primary" />
+          <input type="password" placeholder="Password" className="p-2 rounded mb-4 w-full max-w-xs bg-primary" />
           <button type="submit" className="p-3 rounded w-full max-w-xs bg-green-200 mb-4">Sign In</button>
         </form>
         <p className="text-center">Dont have an account? <a href="/sign-up" className="text-blue-500">Sign Up Here</a></p>

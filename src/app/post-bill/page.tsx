@@ -7,14 +7,17 @@ const PostBillPage = () => {
     <Layout>
       <Header />
 
-      <main className="flex flex-col items-center mt-20">
-        <h1 className="text-4xl">Post a Bill</h1>
-        <form className="flex flex-col items-center mt-10 w-full max-w-lg">
-          <input type="text" placeholder="Bill Title" className="p-2 rounded mb-4 w-full bg-purple-100" />
-          <textarea placeholder="Bill Description" className="p-2 rounded mb-4 w-full bg-purple-100 h-32"></textarea>
-          <input type="text" placeholder="Amount" className="p-2 rounded mb-4 w-full bg-purple-100" />
-          <button type="submit" className="p-3 rounded w-full bg-green-200">Post Bill</button>
-        </form>
+      <main className="flex flex-col items-center mt-10 min-h-screen">
+        <h1 className="text-4xl font-bold">Post a Bill</h1>
+          <div className="mt-5 ">
+            <h2  className="text-3xl"> Choose your category </h2>
+          </div>
+          <div className="mt-10 flex flex-row items-center gap-10">
+              <a href='/landing' className='bg-primary rounded-md p-2'> Mobile Plan</a>
+              <a href='' className='bg-primary rounded-md p-2'> Utility Bill</a>
+              <a href='' className='bg-primary rounded-md p-2'> Internet</a>
+              <a href='' className='bg-primary rounded-md p-2'> Insurance</a>
+          </div>
       </main>
 
       <Footer />

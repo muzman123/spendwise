@@ -12,7 +12,7 @@ const AboutPage = () => {
       </Head>
       <Header />
 
-      <main className="max-w-5xl mx-auto p-8 mt-10">
+      <main className="max-w-5xl mx-auto p-8 mt-10 min-h-screen">
       <section className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
           <div className="flex-1">
                 <h1 className="text-4xl font-bold text-gray-900">Compare Utility, Phone, and Insurance Bills for Price Transparency</h1>
