@@ -1,12 +1,13 @@
 // components/Header.js
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from './logo.png'
 
 const Header = () => {
   return (
-    <header className="bg-secondary p-4 flex justify-between items-center">
+    <header className="bg-secondary p-4 flex items-center z-50">
         <div className="flex items-center">
-          <img src='eye.png' alt="logo" width="10" height="10"/>
+          <Image src={Logo} alt='logo' width={40} height={40}/>
           <span className="ml-2 font-bold">RateXpose</span>
         </div>
         <div className="flex-grow mx-4">

@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Sections from '../components/Sections';
+import styles from '../../styles/Sections.module.css'
 
 const AboutPage = () => {
   return (
@@ -12,7 +14,8 @@ const AboutPage = () => {
       </Head>
       <Header />
 
-      <main className="max-w-5xl mx-auto p-8 mt-10 min-h-screen">
+    <main className="max-w-5xl mx-auto p-8 mt-10 min-h-screen">
+    <Sections>
       <section className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
           <div className="flex-1">
                 <h1 className="text-4xl font-bold text-gray-900">Compare Utility, Phone, and Insurance Bills for Price Transparency</h1>
@@ -28,7 +31,9 @@ const AboutPage = () => {
                 </div>
           </div>
       </section>
-      <section className="mt-20 mb-20">
+    </Sections>
+    <Sections>
+      <section className="">
             <h2 className="text-2xl font-bold text-gray-900">Price Transparency for Utility, Phone, and Insurance Bills</h2>
             <p className="mt-4 text-gray-600">Compare your bills anonymously with others to find the most affordable options in the market.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
@@ -58,9 +63,11 @@ const AboutPage = () => {
                 </div>
             </div>
       </section>
-      <section className="mt-20 mb-20">
+    </Sections>
+    <Sections>
+      <section className="">
             <h2 className="text-2xl font-bold text-gray-900">Price Transparency for Utility, Phone, and Insurance Bills</h2>
-            <p className="mt-4 text-gray-600">Compare how much you're paying to others for the most affordable options.</p>
+            <p className="mt-4 text-gray-600">Compare how much you are paying to others for the most affordable options.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-white p-6 border rounded">
                     <img src="https://placehold.co/600x400" alt="Image showing a group of people on snowy mountains" className="w-full h-64 object-cover mb-4"/>
@@ -70,7 +77,9 @@ const AboutPage = () => {
                 </div>
             </div>
       </section>
-      <section className="mt-20 mb-20">
+      </Sections>
+      <Sections>
+      <section className="">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
             <p className="text-gray-600 mb-8">Find answers to common questions about our utility, phone, and insurance bill comparison platform.</p>
 
@@ -115,8 +124,9 @@ const AboutPage = () => {
                 <button className="bg-blue-600 text-white px-6 py-2 mt-4 rounded">Contact Support</button>
             </div>
       </section>
-
-      <section className="mt-12 mb-20">
+      </Sections>
+    <Sections>
+      <section className="">
             <h2 className="text-2xl font-bold text-gray-900">Find the Best Deals on Utilities and Services</h2>
             <p className="text-gray-600 mt-4">Compare utility, phone, and insurance bills from different providers to find the most affordable options.</p>
             <div className="mt-6 space-x-4">
@@ -124,8 +134,8 @@ const AboutPage = () => {
                 <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded">Get Started</button>
             </div>
       </section>
+    </Sections>
       </main>
-
       <Footer />
     </Layout>
   )

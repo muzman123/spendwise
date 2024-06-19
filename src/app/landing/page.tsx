@@ -2,7 +2,8 @@ import Layout from '../layout'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import styles from '../../styles/Home.module.css';
+import styles from '../../styles/Home.module.css'
+import Image from 'next/image'
 
 const LandingPage = () => {
   return (
@@ -11,8 +12,7 @@ const LandingPage = () => {
         <title>RateXpose Landing Page</title>
       </Head>
       <Header />
-
-      <main className="mt-10">
+      <main>
       <section className="mb-12 max-w-6xl mx-auto p-8 mt-10">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold text-gray-900">Latest Postings</h2>
