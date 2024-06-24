@@ -14,9 +14,9 @@ const PostBillPage = () => {
           </div>
           <div className="mt-10 flex flex-row items-center gap-10">
               <a href='/post-mobile-plan' className='bg-primary rounded-md p-2'> Mobile Plan</a>
-              <a href='/' className='bg-primary rounded-md p-2'> Utility Bill</a>
-              <a href='' className='bg-primary rounded-md p-2'> Internet</a>
-              <a href='' className='bg-primary rounded-md p-2'> Insurance</a>
+              <a href='/post-utility-provider' className='bg-primary rounded-md p-2'> Utility Bill</a>
+              <a href='/post-internet-plan' className='bg-primary rounded-md p-2'> Internet</a>
+              <a href='/post-insurance-provider' className='bg-primary rounded-md p-2'> Insurance</a>
           </div>
       </main>
 
