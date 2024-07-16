@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import MobileProvider from '../components/mobileProviders'
 
 const PostMobileBillPage = () => {
+
   return (
     <Layout>
       <Header />
@@ -12,7 +13,7 @@ const PostMobileBillPage = () => {
         <h1 className="text-4xl font-bold">Post Mobile Bill</h1>
           <div className="mt-5 ">
               <MobileProvider/>
-            </div>
+          </div>
       </main>
 
       <Footer />

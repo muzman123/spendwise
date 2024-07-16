@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import PhoneBill from './phoneBill';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -8,3 +9,19 @@ if (!supabaseUrl || !supabaseKey) {
 }
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
+
+export async function insertPhonePlans(bill : PhoneBill) {
+
+  // Insert the data using the collected input
+  const { data, error } = await supabase
+    .from('phoneplans')
+    .insert([
+      {provider: bill.provider, monthly_cost: bill.monthlyCost, data_limit: bill.dataLimit, minutes: bill.minutes, sms: bill.sms, uploaded_at: bill.uploadedAt}
+    ])
+
+  if (error) {
+    console.error('Error inserting data:', error)
+  } else {
+    console.log('Data inserted successfully:', data)
+  }
+}
