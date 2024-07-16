@@ -1,8 +1,10 @@
 // components/MobileProvider.tsx
 'use client';
 
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image, { StaticImageData } from 'next/image'
+
 import bellLogo from "./providerLogos/bell_logo.png"
 import chatrLogo from "./providerLogos/chatr_logo.png"
 import eastlinkLogo from "./providerLogos/eastlink_logo.png"
@@ -13,6 +15,7 @@ import koodoLogo from "./providerLogos/koodo_logo.png"
 import rogersLogo from "./providerLogos/rogers_logo.png"
 import telusLogo from "./providerLogos/telus_logo.png"
 
+import Modal from './Modal';
 import PhoneBill from '@/lib/phoneBill';
 
 import { insertPhonePlans } from '../../lib/supabase'
@@ -57,6 +60,7 @@ const planPerks = [
 
 const MobileProvider: React.FC = () => {
   const [step, setStep] = useState(1);
+  const router = useRouter();
 
   function handleProviderClick(provider: Provider) {
     console.log("TELUUUUS");
@@ -93,6 +97,11 @@ const MobileProvider: React.FC = () => {
   async function handleFinalSubmit()
   {
     insertPhonePlans(defaultPhoneBill)
+    setStep(5);
+  }
+
+  function handleCloseModal(): void {
+    router.push('/landing');
   }
 
   return (
@@ -212,6 +221,11 @@ const MobileProvider: React.FC = () => {
         </button>
       </div>
     </div>
+    )}
+    {step === 5 && (
+      <Modal isVisible={true} onClose={handleCloseModal}>
+      <p className="text-2xl font-bold">Your bills have been submitted!</p>
+      </Modal>
     )}
     </div>
   );
