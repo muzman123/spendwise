@@ -68,9 +68,7 @@ const MobileProvider: React.FC = () => {
     defaultPhoneBill.provider = provider.name;
     
     setStep(2);
-    // Add your custom logic here
-    // For example, you could insert data into Supabase
-    // insertPhonePlan(provider);
+    
   };
 
   function handleFirstSubmit()
